@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+  <meta charset="UTF-8">
+  <title>QwestForPed</title>
+  <link rel="stylesheet" href="css/style.css" type="text/css"/>
+  <script src="js/index.js"></script>
+</head>
+<body >
+  
+    <div class="block">
+        
+        <div class="flex-item start">
+            <div class="startwindow">
+              <H1>Добро пожаловать <br> в квест – игру <br> «В лабиринте педагогических идей»
+              </H1>
+              <img src="img/qwest.png" alt="qwest" width="600" height="500px"> <br>
+              <button class="btn" id="bt1" onclick="viewDiv()">Начать квест</button>
+            </div>
+            
+        </div>
+        
+       
+
+
+
+
+
+        <div class="flex-item main" id="main1">
+            <H1>Здравствуйте, уважаемые коллеги. <br>
+            Сегодня Вам предстоит пройти непростой, но увлекательный и интересный путь. 
+            Надеемся, что квест – игра будет для вас интересна. 
+            И начнем свой путь с притчи.
+            </H1>
+            <h3>Просмотрите мотивационный ролик для начала квеста</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/vks4ZzxCqSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe> <br>
+            <button class="btn" id="bt2" onclick="viewDiv1()">Я посмотрел видео</button>
+        </div> 
+        <div class="flex-item main" id="main2">
+                <h1>«Я ПРОФЕСИОНАЛ».</h1>
+                <div class="Rebus">
+                  <h3>Для открытия следуйщего задания решите ребус</h3>
+                  <img src="img/Rebus.PNG" alt="Ребус">
+                  <p><input maxlength="25" size="40" type="text" placeholder="Ответ на ребус запишите здесь " id="in1"></p>
+                  <button class="btn " id="bt3" onclick="viewDiv2()">Продолжить</button>
+                </div>
+        </div>
+        <div class="flex-item main" id="main3">
+                <h1>«ЦЕЛЕПОЛОГАНИЕ».</h1>
+                <div class="Colobok">
+                  <h3>Предлагаю Вам  вспомнить сказку «Колобок». <br>
+                    –«Испекла бабка колобок и положила его на окошко студиться. Колобок спрыгнул и покатился…»<br>А куда же он покатился и зачем?
+                  </h3>
+                  <p>Давайте пофантазируем и попробуем исправить печальный конец сказки.<br>Выберите для Колобка цель и придумайте новый финал – позитивный – для нашего Колобка.</p>
+                  <p><input maxlength="40" size="40" value="" placeholder="Запишите цель путешествия колобка"></p>
+                  <textarea  required="required" name="newend" id="txa1" cols="80" rows="10" placeholder="Запишите новый финал сказки Колобок  "></textarea>
+                  <br>
+                  <button class="btn" id="bt4" onclick="viewDiv3()">Ответить</button>
+                </div>
+                <div class="ColobokEnd" id="CE">
+                  <h3>Вывод</h3>
+                  <p>Так и в жизни – если нет цели, непредсказуем финал. <br> А если цель перед нами четкая есть – то и на финише будет достойный результат. <br>
+                    Цели бывают глобальные и локальные. Локальные цели мы формулируем на каждый день, <br> глобальные же цели представляют для нас ориентир, к которому мы стремимся. <br>
+                    Компетентностное образование, которое в современной науке претендует на роль концептуальной основы,<br>  проводимой в сфере образования выступает перед нами глобальной целью процесса образования. <br>
+                    Профессионализм и компетентность являются основными ориентирами нашего выбора.
+                    </p>
+                    <button class="btn" id="bt5" onclick="viewDiv4()">Продолжить</button>
+
+                </div>
+                
+        </div>
+        <div class="flex-item main" id="main4" >
+
+                <h1>«РЕКЛАМНОЕ ОБЪЯВЛЕНИЕ».</h1>
+                <div class="Rezume">
+                  <h3>Представьте, что вы – родители, которые выбирают педагога для своего любимого чада.
+                    <br> И вам нужно составить резюме с точки зрения «Только к этому педагогу!»</h3>
+                  <textarea name="textarea" id="txa2" cols="80" rows="10" minlength="50" placeholder="Запишите значимые качества педагога через запятую"></textarea>
+                  <br> <button class="btn" id="bt6" onclick="viewDiv5()">Ответить</button>
+                </div>
+                <div class="RezumeEnd" id="Rez">
+                  <p>Вывод: Современное  образование требует от специалистов особой подготовки. Готовить обучающихся <br> 
+                     к переменам может только тот педагог,который сам готов к переменам, обладающий высоким уровнем<br> 
+                     знаний и умений, рефлексией,  развитой способностью к проектировочной деятельности, <br>
+                    то есть профессионально-компетентный педагог.</p>
+                    <button class="btn" id="bt7" onclick="viewDiv6()">Продолжить </button>
+                </div>
+        </div>
+        <div class="flex-item main" id="main5">
+                <h1>«ПРОФЕССИОНАЛЬНАЯ  КОМПЕТЕНТНОСТЬ»</h1>
+                <div class="PedMaster">
+                  <h3>ЗАДАНИЕ: Вам необходимо составить из слов и словосочетаний определение следующего понятия</h3>
+                  <h4>Педагогическое мастерство - это</h4>
+                  <textarea name="txa3" id="txa3" cols="70" rows="10" placeholder="Впишите словосочетание/слово которое по вашему мнению соотвествует понятию"></textarea> <br>
+                  <button class="btn" id="bt8" onclick="viewDiv7()">Ответить</button>
+                </div>
+                <div class="ProfComp" id="prof">
+                  <h3>ЗАДАНИЕ:Професиональне компетенции педагога</h3>
+                  <p>Cоставьте перечень ключевых профессиональных компетенций педагога дополнительного образования <br> 
+                    (одним словом – прилагательным). <br>
+                  </p>
+                  <details>
+                    <summary>Подсказки</summary>
+                    Название методических рекомендаций (брошюры),литература (кодекс, программа), ноутбук, скриншот.
+                  </details>
+                <p>Каждое слово / словосочетание начинаеться с буквы что указана перед строкой ввода <br>
+                Впишите слово / словосочетание полностью <br> 
+                Для перехода на следуйщее задание заполните минимум 5 слов /словосочетание</p>
+                <p>М <input type="text"  size='50' maxlength="30" placeholder="" id="input1"></p>
+                <p>П <input type="text"  size='50' maxlength="30" placeholder="" id="input2"></p>
+                <p>П <input type="text"  size='50' maxlength="30" placeholder="" id="input3"></p>
+                <p>К <input type="text"  size='50' maxlength="30" placeholder="" id="input4"></p>
+                <p>И <input type="text"  size='50' maxlength="30" placeholder="" id="input5"></p>
+                <p>П <input type="text"  size='50' maxlength="30" placeholder="" id="input6"></p>
+                <p>П <input type="text"  size='50' maxlength="30" placeholder="" id="input7"></p>
+                <p>И <input type="text"  size='50' maxlength="30" placeholder="" id="input8"></p>
+                <p>А <input type="text"  size='50' maxlength="30" placeholder="" id="input9"></p> <br>
+                <button class="btn" id="bt9" onclick="viewDiv8()">Ответить</button>
+              </div>
+                <div class="Klaster" id="DivKl">
+                    <h3>«ПУТИ РАЗВИТИЯ ПРОФЕССИОНАЛЬНОЙ <br> КОМПЕТЕНТНОСТИ».</h3>
+                    <p>ЗАДАНИЕ: Составьте кластер «Пути развития профессиональной компетентности  педагога», указав, через какие виды деятельности происходит повышение профессиональной компетентности педагога.</p>
+                    <img src="img/str.png" alt="стрелочки" height="250" width="600"> <br>
+                    <label for="textarea_1">Професиональный</label> 
+                    <label for="textarea_2">Психол-ий и педагогический</label> 
+                    <label for="textarea_3">Методический</label> 
+                    <label for="textarea_4">IT-технологии</label> 
+                    
+                    
+                    <br>
+                    <textarea name="textarea_1" id="ta1" cols="20" rows="10" ></textarea>
+                    <textarea name="textarea_2" id="ta2" cols="20" rows="10"></textarea>
+                    <textarea name="textarea_3" id="ta3" cols="20" rows="10"></textarea>
+                    <textarea name="textarea_4" id="ta4" cols="20" rows="10"></textarea>
+                    <button class="btn" id="bt10" onclick="viewDiv9()">Продолжить</button>
+                </div>
+                <div class="WinTrace" id="DivWT">
+                  <h3>«ЛЕСТНИЦА УСПЕХА»</h3><br>
+                  <p>Вам необходимо разместить на ступенях лестницы слова в соответствии  со значимостью при достижении какой-либо цели.</p>
+                  <p>
+          Слова : учусь, творю, могу, расту, желаю.</p>
+                  <input type="text" class="Uchus" id="uchus" style="font-size: 14pt; height: 30px; width:280px;" >
+                  <input type="text" class="Uchus2" id="tvory" style="font-size: 14pt; height: 30px; width:280px;">
+                  <input type="text" class="Uchus3" id="rastu" style="font-size: 14pt; height: 30px; width:280px;">
+                  <input type="text" class="Uchus4" id="jelay" style="font-size: 14pt; height: 30px; width:280px;">
+                  <input type="text" class="Uchus5" id="mogu" style="font-size: 14pt; height: 30px; width: 189px;">
+                    <img src="img/starw.png" alt="" > <br>
+                  <button class="btn" id="bt11" onclick="viewDiv10()">Завершить квест</button>
+                </div>
+        </div>
+       
+
+
+
+
+
+        <div class="flex-item end" id="end1">
+          <h1>Уважаемые коллеги.</h1>
+          <br>
+               <br>
+               <br>
+               <br>
+          <h3>В нашей профессии нет предела совершенству, то что вчера казалось <br>
+            единственно возможным, сегодня выглядит устаревшим. Появляются новые <br>
+             идеи и желание что-то изменить. И любой творчески работающий педагог,  <br>
+             учитель находится в постоянном поиске. Не бойтесь творить добро, искать  <br>
+             что-то новое, познавать неизвестное, показывать детям правильный путь. Не <br>
+              прекращайте самообразовательной работы и не забывайте, что, сколько бы вы <br>
+               не знали, знанию и образованию нет границ.</h3>
+               <br>
+               <br>
+               <br>
+               <br>
+               <a href="img/sertificate.png" download="">
+                <button class="btn" >Скачать файл </button>
+              </a>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
